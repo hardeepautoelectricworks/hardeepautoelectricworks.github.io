@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+     
+    p {
+        margin-top: 30px;
+        margin-bottom:  20px; /* Adjust the margin-bottom value as needed */
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: Arial, sans-serif;
+        font-size: 16px; /* Adjust as needed */
+        line-height: 1.5; /* Adjust as needed */
+        font-weight: normal; /* or bold for emphasis */
+        letter-spacing: 0.5px; /* Adjust as needed */
+    }
+    
+    
+    .h11 {
+    font-family: "Arial", sans-serif; /* Change the font family as needed */
+        
+        font-weight: bold;
+}
+    
+  /* Styles for tabs */
+    .tabs-container {
+    text-align: center;
+  }
+  .tab {
+    display: none;
+  }
+
+  .tablink {
+   background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .tablink:hover {
+  background: linear-gradient(45deg,blue, #f05e3a);
+  border: 1px solid #ff7e5f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .tabcontent {
+    padding: 20px;
+   /* border: 1px solid #007bff; /* Blue border */
+    border-radius: 0 5px 5px 5px; /* Rounded corners on bottom */
+    margin-top: 10px; /* Overlap tab borders */
+  }
+
+  .active {
+    display: block;
+  }
+
+  /* Image effect */
+  .home-image {
+    
+  max-height: 100%; /* Ensures the image doesn't exceed its container */
+  width: 100%; /* Allows the image to scale proportionally */
+  height: auto; /* Allows the image to scale proportionally */
+transition: transform 0.5s;
+      display: block; /* Ensures the image is treated as a block element */
+  margin: auto; /* Centers the image horizontally */
+  max-width: 100%; /* Ensures the image doesn't exceed the width of the container */
+  max-height: calc(100vh - 100px); /* Limits the height to 100% of the viewport height minus 100px for header/footer */
+      
+      background: linear-gradient(135deg, red, #feb47b); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure the image doesn't overflow the container with rounded corners */
+
+      
+  }
+    
+    @keyframes moveHeading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        
+        h1 {
+            animation: moveHeading 2s ease-in-out forwards;
+            /* Adjust animation duration and timing function as needed */
+        }
+
+    @keyframes moveParagraph {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(0); }
+        }
+        
+        .paragraph2 {
+            animation: moveParagraph 2s ease-in-out forwards;
+            /* Adjust animation duration and timing function as needed */
+        }
+    
+    @keyframes moveParagraph {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(0); }
+        }
+        
+        .left-options, .right-options    {
+            animation: moveParagraph 2s ease-in-out forwards;
+            /* Adjust animation duration and timing function as needed */
+        }
+    
+    @keyframes bumpMotion {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .logo {
+            position: relative;
+            animation: bumpMotion 1s ease-in-out infinite;
+            /* Adjust animation duration and timing function as needed */
+        }
+    @keyframes moveButton {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+        <div class="header">
+    <div class="logo">
+        <img src="logo.jpeg" alt="Logo">
+    </div>
+            <div class="overlay"></div>
+    <div class="tabs-container">
+        
+<button class="tablink motion-button" onclick="openTab('home')">Home</button>
+<button class="tablink motion-button" onclick="openTab('repairs')">Repairs</button>
+<button class="tablink motion-button" onclick="openTab('inventory')">Inventory</button>
+<button class="tablink motion-button" onclick="openTab('contact')">Contact</button>
+<button class="tablink motion-button" onclick="openTab('about')">About Us</button>
+        
+        </div>
+    
+     <div class="logo">
+        <img src="logo.jpeg" alt="Logo">
+           </div>
+   
+    </div>
+      
+      
+    
+    <div id="home" class="tabcontent">
+      
+    <header>
+          <h1>Welcome to Hardeep Auto Electric Works </h1>
+</header>
+        <div class="slideshow-container">
+        <div class="slide fade">
+        
+        <img src="homeimage.jpeg" alt="Home Image" class="home-image">
+            </div>
+            
+     <div class="slide fade">
+            <img src="homeimage2.jpeg" alt="Home Image 2" class="home-image">
+            </div>
+            
+            <div class="slide fade">
+            <img src="homeimage.3jpeg.jpeg" alt="Home Image 2" class="home-image">
+            </div>
+            <div class="slide fade">
+            <img src="homeimage4.jpeg" alt="Home Image 2" class="home-image">
+            </div>
+            
+            </div>
+            
+            <button class="prev-btn" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next-btn" onclick="plusSlides(1)">&#10095;</button>
+        
+    
+    <p>
+    
+    
+    
+    It’s fair to say that your car’s electrical system is really at the heart of all the essential parts that make it possible for it to go down the road. Modern cars today are loaded with sophisticated components such as sensors and computers, all connected to each other through miles of wiring. When electrical connections in a car fail, a whole host of other serious issues can result.</p>
+
+<p>
+        If you find yourself with a car that is experiencing electrical problems, you do not want to take it to just any auto electrical repair shop. The highly trained professionals at Hardeep Auto Electric Works Garage have an auto electrical repair shop that is the best in the business. We specialize in electrical problems that other car electrical repair places cannot handle. There is no doubt you will be in good hands with our car electrical shop.</p>
+
+<p> The electrical systems of cars now are incredibly complex and require extensive training in order to locate the source of a problem, diagnose it and repair it properly. In addition, the task of fixing vehicles in our car electrical repair facility also requires the use of sophisticated diagnostic tools and scanners. We have invested heavily in both equipment and training so our technicians can expertly repair any electrical issue that might take place. In fact, we have the same equipment and training as the dealerships do.
+    
+    </p>
+    
+    <img src="Computer.jpg" alt="Home" class="home-image1">
+        
+        <h1 class="h11">CAR ELECTRICAL REPAIR/AUTOMOTIVE ELECTRICAL REPAIR SERVICES</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <p class="paragraph">
+            Here is a partial list of some of the electrical issues that our car electrical shop has helped customers with over the years.
+        </p>
+        
+        <p class="paragraph1" >• STARTERS <br>
+• ALTERNATORS<br>
+• SENSORS<br>
+• RELAYS<br>
+• BATTERY ISSUES<br>
+• LOOSE WIRING<br>
+• CORRODED CONNECTORS<br>
+• COMPUTER PROBLEMS<br>
+• NON-FUNCTIONING LIGHTS<br>
+• DASHBOARD GAUGES<br>
+• WIRING FAILURES<br>
+
+      </p>  
+        
+        <p class="paragraph">If your particular electrical issue isn’t listed here, don’t worry, we have seen it. Our car electrical shop will get you back on the road quickly, with the highest level of quality workmanship. When it comes to an auto electrical repair shop, you need a trusted partner who has the knowledge and experience to find the problem and get the job done right – the first time. That is the mission of Hardeep Auto electrical repair team.</p>
+        
+   <div class="image-container">
+    <img src="Audi.png" alt="left">
+    <img src="mercedes.jpeg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+<img src="honda.png" alt="left">
+    <img src="bmw.png" alt="Image 2">
+    </div>     
+
+<p>Contact us today to find out more about how our auto electrical repair shop can help you with your car’s electrical problems and get your vehicle back to performing the way that it should. You can count on Hardeep's Garage and our car electrical shop experts.</p>
+        
+        <header>
+        
+        <h1>
+        About Ourself
+            
+            <p>
+            
+            We help keep you and your loved ones safe on the roads in trouble-free vehicles maintained by our trained automotive professionals to the highest standards. We will never compromise the work we do for you or the products we provide for you. This is our mission. This is our promise.
+<br>
+G.T Road, near Gill Filling Station
+<br>
+Open Monday to Saturday 9am-8pm
+<br>
+Call: +91 9814311300
+                <br>
+            
+            <a href="https://www.instagram.com/hardeepauto_electricworks/" target="_blank">
+                <br>
+                <img src="instagram.png" alt="Instagram" class="insta"></a>
+
+                <br>
+                <br>
+     ©2024 hardeep auto electric works. ALL RIGHTS RESERVED. PRIVACY. WEBSITE DESIGN BY Ishpreet singh seehra.
+            
+            </p>
+            
+            </h1>
+        
+        
+        
+        </header>
+        
+        
+</div>
+    
+           
+<div id="repairs" class="tabcontent">
+  
+  <header>
+    <h1>
+      
+      Repairs We Performed
+      </h1>
+    </header>
+    <p   class="paragraph2">
+     We perfomed every kind of electrical repairs
+    </p> <P class="paragraph">
+    Here is a partial list of some of the electrical issues that our car electrical shop has helped customers with over the years.
+    </P>
+    
+     
+    
+    <div class="containerforrepair">
+  <div class="left-options">
+    <ul>
+      <li>• ALTERNATORS</li>
+      <li>• SENSORS</li>
+      <li>• RELAYS</li>
+      <li>• BATTERY ISSUES</li>
+      <li>• LOOSE WIRING</li>
+    </ul>
+  </div>
+  <div class="right-options">
+    <ul>
+      <li>• CORRODED CONNECTORS</li>
+      <li>• COMPUTER PROBLEMS</li>
+      <li>• NON-FUNCTIONING LIGHTS</li>
+      <li>• DASHBOARD GAUGES</li>
+      <li>• WIRING FAILURES</li>
+    </ul>
+  </div>
+</div>
+    <br>
+    <br>
+    <br>
+<div class="image-container">
+    <img src="alternator.jpeg" alt="left">
+    <img src="self.jpeg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+<img src="switch-removebg-preview.png" alt="left">
+    <img src="headlight.jpg" alt="Image 2">
+    </div>
+    <br>
+    <br>
+    <br>
+    <header>
+    <h1>
+        CARS    
+        </h1>
+    <br>
+    </header>
+    <P class="paragraph3">
+    We performed repair on every type of car 
+    </P>
+    <div class="image-container">
+    <img src="Audi.png" alt="left">
+    <img src="mercedes.jpeg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+<img src="honda.png" alt="left">
+    <img src="bmw.png" alt="Image 2">
+    </div>
+    <header>
+        
+        <h1>
+        
+            
+            <p>
+            
+            We help keep you and your loved ones safe on the roads in trouble-free vehicles maintained by our trained automotive professionals to the highest standards. We will never compromise the work we do for you or the products we provide for you. This is our mission. This is our promise.
+<br>
+G.T Road, near Gill Filling Station
+<br>
+Open Monday to Saturday 9am-8pm
+<br>
+Call: +91 9814311300
+               <br> 
+                <a href="https://www.instagram.com/hardeepauto_electricworks/" target="_blank">
+                <br>
+                <img src="instagram.png" alt="Instagram" class="insta"></a>
+
+                <br>
+                <br>
+     ©2024 hardeep auto electric works. ALL RIGHTS RESERVED. PRIVACY. WEBSITE DESIGN BY Ishpreet singh seehra.
+            
+            </p>
+        
+            
+    
+            </h1>
+        
+        
+        
+        </header>
+    
+</div>
+
+    
+
+    
+<div id="inventory" class="tabcontent">
+    
+  <header>
+    <h1>Inventory</h1>
+      </header>
+    <h2 style="text-align: center;">
+    We Sold Inverters, Batteries and Electrical stuff like horns, bulbs etc.
+    </h2>
+    
+    <p   class="paragraph2">
+     Invertors We Sold:
+    </p>
+    <div class="image-container">
+    <img src="amaron.jpg" alt="left">
+    <img src="sukam.jpeg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+<img src="sf.jpg" alt="left">
+    
+    </div> 
+  
+    <p   class="twowheeler">
+     Batteries For Two Wheelers.
+    </p>
+    
+     <div class="twowheeler">
+    <img src="twowheel.jpeg" alt="left">
+    <img src="twowheel1.png" alt="Image 2">
+    <br>
+    <br>
+    <br>
+             <img src="twowheel2.jpeg" alt="Image 2">
+
+<img src="twowheel3.png" alt="left">
+    
+    </div> 
+     
+   <p   class="batt">
+     Batteries For Cars.
+    </p> 
+    
+    
+     <div class="batt">
+    <img src="carbat.jpeg" alt="left">
+    <img src="carbat2.jpeg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+             <img src="carbat3.jpeg" alt="Image 2">
+
+<img src="carbat4.jpeg" alt="left">
+    <img src="carbat5.jpeg" alt="left">
+
+    </div> 
+    
+       
+   <p   class="paragraph2">
+     Batteries For Inverters.
+    </p> 
+    
+    <div class="inv">
+    <img src="inv.jpg" alt="left">
+    <img src="inv1.jpg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+             <img src="inv2.png" alt="Image 2">
+
+<img src="inv3.jpg" alt="left">
+    <img src="inv4.png" alt="left">
+
+    </div>
+    
+    <p   class="paragraph2">
+     Horns
+    </p>
+    
+    
+    <div class="horn">
+    <img src="horn.jpeg" alt="left">
+    <img src="horn1.jpg" alt="Image 2">
+    <br>
+    <br>
+    <br>
+             <img src="horn2.jpg" alt="Image 2">
+
+<img src="horn3.jpg" alt="left">
+    <img src="horn4.jpg" alt="left">
+
+    </div>
+    
+    <header>
+        
+        <h1>
+        
+            
+            <p>
+            
+            We help keep you and your loved ones safe on the roads in trouble-free vehicles maintained by our trained automotive professionals to the highest standards. We will never compromise the work we do for you or the products we provide for you. This is our mission. This is our promise.
+<br>
+G.T Road, near Gill Filling Station
+<br>
+Open Monday to Saturday 9am-8pm
+<br>
+Call: +91 9814311300
+               <br> 
+                <a href="https://www.instagram.com/hardeepauto_electricworks/" target="_blank">
+                <br>
+                <img src="instagram.png" alt="Instagram" class="insta"></a>
+
+                <br>
+                <br>
+     ©2024 hardeep auto electric works. ALL RIGHTS RESERVED. PRIVACY. WEBSITE DESIGN BY Ishpreet singh seehra.
+            
+            </p>
+        
+            
+    
+            </h1>
+        
+        
+        
+        </header>
+</div>
+
+<div id="contact" class="tabcontent">
+ <div class="containerc">
+    <div class="image-containerc">
+        <img src="contact.jpeg" alt="contact image" class="home-image2">
+        <div class="overlayc">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please Call us at +91 9814311300.</p>
+            G.T Road, near Gill Filling Station
+<br>
+Open Monday to Saturday 9am-8pm
+            <br>
+            
+            <a href="https://www.instagram.com/hardeepauto_electricworks/" target="_blank">
+                <br>
+                <img src="instagram.png" alt="Instagram" class="insta"></a>
+
+            
+        </div>
+    </div>
+</div>
+    <header>
+        
+        <h1>
+        
+            
+            <p>
+            
+            We help keep you and your loved ones safe on the roads in trouble-free vehicles maintained by our trained automotive professionals to the highest standards. We will never compromise the work we do for you or the products we provide for you. This is our mission. This is our promise.
+<br>
+G.T Road, near Gill Filling Station
+<br>
+Open Monday to Saturday 9am-8pm
+<br>
+Call: +91 9814311300
+                
+                <br>
+            <a href="https://www.instagram.com/hardeepauto_electricworks/" target="_blank">
+                <br>
+                <img src="instagram.png" alt="Instagram" class="insta"></a>
+
+            
+                <br>
+                <br>
+     ©2024 hardeep auto electric works. ALL RIGHTS RESERVED. PRIVACY. WEBSITE DESIGN BY Ishpreet singh seehra.</p>
+    
+            
+            
+            </h1>
+        
+        
+        
+        </header>
+    
+  
+</div>
+
+<div id="about" class="tabcontent">
+    <header>
+  <h1>About Us</h3>
+  </header>
+<br>
+    <div id="about" >
+    <div class="logo-container">
+        <img src="logo.jpeg" alt="Logo" class="logo1">
+    </div>
+    <!-- Other content for the About Us page -->
+</div>
+
+    
+    
+</div>
+
+<script>
+  function openTab(tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+    setActiveTab(tabName);
+  }
+
+  function setActiveTab(tabName) {
+    var tablinks = document.getElementsByClassName("tablink");
+    for (var i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+    document.querySelector("[onclick='openTab('" + tabName + "')']").classList.add("active");
+  }
+
+  // By default, open Home tab
+  openTab('home');
+</script>
+    
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<script src="slideshowscript.js"></script>
+    
+    <script>
+  window.addEventListener('load', function() {
+    var button = document.querySelector('.motion-button');
+    button.classList.add('motion-button');
+  });
+</script>
+
+</body>
+</html>
